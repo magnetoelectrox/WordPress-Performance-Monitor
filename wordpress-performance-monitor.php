@@ -16,22 +16,21 @@
 
 function activate_wpm() {
     /* activation code here */
-    file_put_contents(plugin_dir_path(__DIR__) . '/test.txt', 'activated', FILE_APPEND);
+    //file_put_contents(plugin_dir_path(__DIR__) . '/test.txt', 'activated', FILE_APPEND);
 }
   
 register_activation_hook( __FILE__, 'activate_wpm' );
 
 function deactivate_wpm() {
-    /* deactivation code here */
-    file_put_contents(plugin_dir_path(__DIR__) . '/test.txt', 'deactivated', FILE_APPEND);
-
+    /* deactivation code here *
+    //file_put_contents(plugin_dir_path(__DIR__) . '/test.txt', 'deactivated', FILE_APPEND);
 }
 
 register_deactivation_hook( __FILE__, 'deactivate_wpm' );
 
 function uninstallhook_wpm() {
     /* codes to perform during unistallation */
-    file_put_contents(plugin_dir_path(__DIR__) . '/test.txt', 'uninstalled', FILE_APPEND);
+    //file_put_contents(plugin_dir_path(__DIR__) . '/test.txt', 'uninstalled', FILE_APPEND);
 }
 
 register_uninstall_hook( __FILE__, 'uninstallhook_wpm' );
