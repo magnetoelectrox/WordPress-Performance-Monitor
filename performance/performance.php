@@ -9,6 +9,11 @@ class PERFROMANCE_WPM {
 
     }
 
+    //read nginx to log to extract performance info
+    public function read_nginx_logs() {
+
+    }
+
     //use php reflection api to get class and object info
     public function get_php_class_reflection() {
 
